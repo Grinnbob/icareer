@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Link } from "react-router-dom"
 import { RoutesList } from "./routes"
 import "./styles/App.css"
-import { genRoutes } from "./utils/genRoutes"
+import { GenRoutes } from "./utils/genRoutes"
 
 const App: React.FC = () => {
     return (
@@ -26,7 +26,7 @@ const App: React.FC = () => {
                     </li>
                 </ul>
             </nav>
-            {genRoutes(RoutesList)}
+            {GenRoutes(RoutesList)}
         </Router>
     )
 }

@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom"
 import { useTypedSelector } from "../hooks/useTypedSelector"
 import { IRoute } from "../routes"
 
-export const genRoutes = (routes: IRoute[]) => {
+export const GenRoutes = (routes: IRoute[]) => {
     const me = useTypedSelector((state) => state.auth.me)
     const token = useTypedSelector((state) => state.auth.token)
     const isAuthenticated = !!token
